@@ -1,0 +1,11 @@
+{
+  "name": "FixCoach AI - Trades Copilot",
+  "description": "AI jobsite copilot for skilled trades with real-time camera diagnosis, safety hard stops, hands-free voice guidance, and offline procedures.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

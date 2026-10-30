@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <!-- Background Shield -->
+  <rect width="512" height="512" rx="112" fill="#0b0f19" />
+  <path d="M256 44 L432 104 C432 290 356 398 256 468 C156 398 80 290 80 104 Z" fill="url(#shieldGrad)" stroke="#334155" stroke-width="8" />
+  <path d="M256 68 L410 120 C410 282 344 378 256 440 C168 378 102 282 102 120 Z" fill="#090d16" stroke="url(#goldGrad)" stroke-width="6" />
+
+  <!-- Safety Warning Stripes Bar -->
+  <g opacity="0.3">
+    <path d="M160 160 L352 160" stroke="#f59e0b" stroke-width="6" stroke-dasharray="16 8" />
+  </g>
+
+  <!-- Wrench & Bolt Graphic -->
+  <g transform="translate(140, 140) scale(0.9)">
+    <!-- Crossed Wrench / Caliper -->
+    <path d="M60 210 L195 75 C205 65 210 50 205 38 C200 25 186 18 172 23 C160 28 150 40 145 52 L115 82 L75 42 C70 37 60 37 55 42 L42 55 C37 60 37 70 42 75 L82 115 L52 145 C40 150 28 160 23 172 C18 186 25 200 38 205 C50 210 65 205 75 195 Z" fill="url(#goldGrad)" />
+    <!-- Lightning Bolt / AI Pulse -->
+    <path d="M170 30 L90 145 L145 145 L100 240 L210 115 L155 115 Z" fill="url(#cyanGrad)" stroke="#090d16" stroke-width="4" filter="drop-shadow(0 4px 12px rgba(56,189,248,0.5))" />
+  </g>
+
+  <!-- Jobsite AI Eyepiece / Reticle -->
+  <circle cx="256" cy="256" r="160" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 8" opacity="0.4" />
+  <circle cx="256" cy="256" r="6" fill="#38bdf8" />
+</svg>
