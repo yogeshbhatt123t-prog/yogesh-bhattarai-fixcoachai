@@ -15,7 +15,7 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express();
+export const app = express();
 const PORT = Number(process.env.PORT) || 3000;
 
 // Generous payload limit for high-res jobsite camera photos
@@ -483,4 +483,8 @@ async function startServer() {
   });
 }
 
-startServer();
+export default app;
+
+if (process.env.VERCEL !== '1' && !process.env.VERCEL_ENV) {
+  startServer();
+}
